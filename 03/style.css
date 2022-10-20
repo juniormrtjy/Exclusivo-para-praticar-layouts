@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primmary: #f1c40f;
+  --alt-color: #d9b00d;
+  --paragraph: #303030;
+  --headline: #0d0d0d;
+}
+
+body {
+  font-family: 'Poppins';
+  color: var(--paragraph);
+}
+
+h1 {
+  color: var(--headline);
+}
