@@ -79,8 +79,24 @@ button {
 
 .stats {
   width: 32.7rem;
-  height: 47rem;
+  /* height: 47rem; */
   margin: auto;
 
   background: var(--brand-beige);
+
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.stats h3 {
+  font-size: 4.8rem;
+}
+
+.stats p {
+  font-size: 1.6rem;
+  margin: 0;
 }
