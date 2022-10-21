@@ -25,6 +25,7 @@ body {
 .wrapper {
   max-width: 37.7rem;
   margin: auto;
+  padding-inline: 1.5rem;
 }
 
 button {
