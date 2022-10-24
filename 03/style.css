@@ -24,6 +24,7 @@ body {
   color: var(--neutral-300);
   background-color: var(--neutral-900);
   font-size: 1.6rem;
+  padding-inline: 1.5rem;
 }
 
 .wrapper {
