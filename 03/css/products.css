@@ -155,8 +155,53 @@ h1 {
   border-radius: 0.4rem;
 }
 
+#products .links button:nth-of-type(1) a:hover {
+  background: var(--neutral-700);
+}
+
 #products .links button:nth-of-type(2) a {
   background-color: var(--teal-500);
+}
+
+#products .links button:nth-of-type(2) a:hover {
+  background-color: var(--teal-400);
+}
+
+/* ANIMATIONS */
+#nav {
+  animation: toBottom 0.5s backwards;
+}
+
+#tags {
+  animation: toRight 0.5s backwards;
+}
+
+#products .info:nth-of-type(1) {
+  animation: toRight 0.5s 0.1s backwards;
+}
+
+#products .info:nth-of-type(1) img {
+  animation: smooth 0.5s 0.7s backwards;
+}
+
+#products .info:nth-of-type(2) {
+  animation: toRight 0.5s 0.3s backwards;
+}
+
+#products .info:nth-of-type(2) img {
+  animation: smooth 0.5s 0.9s backwards;
+}
+
+#products .info:nth-of-type(3) {
+  animation: toRight 0.5s 0.5s backwards;
+}
+
+#products .info:nth-of-type(3) img {
+  animation: smooth 0.5s 1s backwards;
+}
+
+#products img {
+  animation: smooth 0.4s 0.6s backwards;
 }
 
 @media (max-width: 386px) {

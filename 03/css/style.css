@@ -130,3 +130,20 @@ a {
   font-size: var(--text-medium);
   font-weight: 700;
 }
+
+/* ANIMATIONS */
+#header h1 {
+  animation: toRight 0.5s backwards;
+}
+
+#header .icons {
+  animation: toRight 0.5s 0.2s backwards;
+}
+
+#header button:nth-of-type(1) {
+  animation: toRight 0.5s 0.4s backwards;
+}
+
+#header button:nth-of-type(2) {
+  animation: toRight 0.5s 0.6s backwards;
+}
