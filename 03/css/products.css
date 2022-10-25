@@ -96,7 +96,6 @@ h1 {
 }
 
 #products .info {
-  /* background: var(--teal-500); */
   padding: 1.4rem 0.6rem;
   border-radius: 0.4rem;
   display: flex;
