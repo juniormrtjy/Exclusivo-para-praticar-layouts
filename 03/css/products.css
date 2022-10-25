@@ -68,12 +68,11 @@ h1 {
 
 #nav.scroll {
   background: var(--teal-500);
+  padding-block: 0.5rem;
 }
 
-#nav .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#nav h1 {
+  text-align: center;
 }
 
 #nav h1 strong {
