@@ -7,6 +7,7 @@
 :root {
   font-size: 62.5%;
   --font: 'Poppins', sans-serif;
+  --nav-height: 6.4rem;
 
   /* colors */
   --teal-500: #14b8a6;
@@ -29,12 +30,12 @@ body {
   color: var(--neutral-300);
   background-color: var(--neutral-900);
   font-size: var(--text-medium);
-  padding-inline: 1.5rem;
 }
 
 .wrapper {
   max-width: 37.7rem;
   margin: auto;
+  padding-inline: 1.5rem;
 }
 
 img {
@@ -59,6 +60,14 @@ h1 {
 
 #nav {
   padding-block: 1.2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#nav.scroll {
+  background: var(--teal-500);
 }
 
 #nav .wrapper {
@@ -71,9 +80,14 @@ h1 {
   color: var(--teal-500);
 }
 
+#nav.scroll strong {
+  color: var(--neutral-300);
+}
+
 /* ========= TAGS ========== */
 
 #tags .wrapper {
+  margin-top: var(--nav-height);
   padding: 0.7rem;
   border-radius: 0.4rem;
   background-color: var(--neutral-800);
