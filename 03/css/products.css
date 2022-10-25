@@ -96,17 +96,24 @@ h1 {
 }
 
 #products .info {
-  background: var(--teal-500);
+  /* background: var(--teal-500); */
   padding: 1.4rem 0.6rem;
   border-radius: 0.4rem;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 1rem;
 }
 
 #products .img {
   width: 9.2rem;
   height: 12rem;
+  background: var(--neutral-800);
+  padding: 1rem;
+  border-radius: 0.4rem;
+
+  display: flex;
+  align-items: center;
 }
 
 #products .texts {
@@ -127,7 +134,7 @@ h1 {
   display: block;
   padding-block: 0.4rem;
   width: 6.3rem;
-  background-color: var(--neutral-800);
+  background-color: var(--teal-500);
   color: var(--neutral-100);
   border-radius: 0.4rem;
 }
