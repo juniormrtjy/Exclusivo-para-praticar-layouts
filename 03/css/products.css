@@ -130,11 +130,19 @@ h1 {
   font-size: var(--text-small);
 }
 
+#products strong {
+  color: var(--teal-500);
+}
+
 #products a {
   display: block;
   padding-block: 0.4rem;
   width: 6.3rem;
-  background-color: var(--teal-500);
+  background-color: var(--neutral-800);
   color: var(--neutral-100);
   border-radius: 0.4rem;
+}
+
+#products .links button:nth-of-type(2) a {
+  background-color: var(--teal-500);
 }
