@@ -59,7 +59,7 @@ h1 {
 /* ========== NAVIGATION ========== */
 
 #nav {
-  padding-block: 1.2rem;
+  padding-block: 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -68,7 +68,6 @@ h1 {
 
 #nav.scroll {
   background: var(--teal-500);
-  padding-block: 0.5rem;
 }
 
 #nav h1 {
