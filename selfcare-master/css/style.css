@@ -187,7 +187,6 @@ img {
 
   #product .container {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 7rem;
     row-gap: 4rem;
     max-width: 100%;
     margin: 0 4rem;
