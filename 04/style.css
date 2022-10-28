@@ -20,11 +20,14 @@
 
   --emerald-500: #10b981;
   --emerald-700: #047857;
+
+  --white: white;
 }
 
 body {
   font-family: var(--font);
   font-size: 1.6rem;
+  background-color: var(--white);
 }
 
 .wrapper {
