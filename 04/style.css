@@ -18,8 +18,8 @@
   --zinc-800: #27272a;
   --zinc-900: #18181b;
 
-  --rose-700: #be123c;
-  --rose-900: #881337;
+  --emerald-500: #10b981;
+  --emerald-700: #047857;
 }
 
 body {
@@ -60,7 +60,7 @@ ul {
 /* NAVIGATION */
 
 #nav .logo {
-  color: var(--rose-700);
+  color: var(--emerald-500);
   font-size: var(--font-32);
   font-weight: 500;
 }
@@ -74,7 +74,7 @@ ul {
 
 #header {
   height: 25.8rem;
-  background: var(--rose-700);
+  background: var(--emerald-500);
   display: grid;
   place-content: center;
 }
@@ -110,7 +110,7 @@ ul {
 }
 
 #products span {
-  color: var(--rose-700);
+  color: var(--emerald-500);
 }
 
 /* FOOTER */
@@ -130,7 +130,7 @@ ul {
 }
 
 #footer .form h2 {
-  color: var(--rose-900);
+  color: var(--emerald-700);
 }
 
 #footer input {
@@ -149,7 +149,7 @@ ul {
 }
 
 #footer input[type='submit'] {
-  background: var(--rose-900);
+  background: var(--emerald-700);
   color: var(--zinc-100);
   cursor: pointer;
 }
