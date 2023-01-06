@@ -23,6 +23,8 @@
   --alt-main-color: hsl(6 59% 45%);
   --black: hsl(0 0% 5%);
   --white: hsl(0 0% 100%);
+
+  --nav-height: 6.2rem;
 }
 
 html,
@@ -51,12 +53,27 @@ button {
 }
 
 .wrapper {
-  padding-inline: 2rem;
+  padding: 1rem 2rem;
+}
+
+.nada {
+  height: 70rem;
+  color: white;
+  /* margin-top: var(--nav-height); */
 }
 
 /* NAVIGATION */
 nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+}
+
+nav img {
+  display: block;
+  width: 10rem;
+  object-position: 0 0rem;
 }
 
 .menu {
@@ -95,6 +112,8 @@ nav.show .menu-links {
   height: 100vh;
   background: var(--main-color);
 
+  font-size: 2rem;
+
   /* visibility: hidden;
   opacity: 0; */
   transition: 0.2s;
@@ -103,6 +122,7 @@ nav.show .menu-links {
 .menu-links div:nth-child(1) {
   text-align: right;
   padding-inline: 2rem;
+  padding-top: 0.4rem;
 }
 
 .menu-links svg path {
@@ -114,7 +134,7 @@ nav.show .menu-links {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .menu-links a {
@@ -127,6 +147,18 @@ nav.show .menu-links {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
+}
+
+/* HEADER */
+
+#header {
+  /* background-image: url('assets/tree-geae9c9fca_1280\ 01.png');
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat; */
+  background: black;
+
+  padding-top: var(--nav-height);
 }
 
 @media (max-width: 386px) {
