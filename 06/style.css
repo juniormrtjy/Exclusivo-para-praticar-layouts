@@ -89,9 +89,12 @@ nav.show .close-menu path {
   stroke: white;
 }
 
+nav.show {
+  overflow: hidden;
+}
+
 nav.show .open-menu {
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 /* menu bottom */
