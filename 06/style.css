@@ -50,6 +50,7 @@ a {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .wrapper {
@@ -76,14 +77,18 @@ nav img {
   object-position: 0 0rem;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .menu svg path {
   stroke: black;
+}
+
+nav.show .close-menu {
+  display: block;
+  position: relative;
+  z-index: 10;
+}
+
+nav.show .close-menu path {
+  stroke: white;
 }
 
 /* menu bottom */
@@ -99,14 +104,13 @@ nav img {
 
 /* menu links */
 nav.show .menu-links {
-  /* visibility: visible;
-  opacity: 1; */
+  visibility: visible;
+  opacity: 1;
   left: 0;
 }
 
 .menu-links {
   position: fixed;
-  left: 300%;
   top: 0;
   width: 100%;
   height: 100vh;
@@ -114,8 +118,8 @@ nav.show .menu-links {
 
   font-size: 2rem;
 
-  /* visibility: hidden;
-  opacity: 0; */
+  visibility: hidden;
+  opacity: 0;
   transition: 0.2s;
 }
 
@@ -129,24 +133,9 @@ nav.show .menu-links {
   stroke: white;
 }
 
-.menu-links ul:nth-of-type(1) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
 .menu-links a {
   color: white;
   font-weight: bold;
-}
-
-.menu-links .socials {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
 }
 
 /* HEADER */

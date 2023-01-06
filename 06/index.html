@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>06</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
     <nav class="" id="navigation">
       <div class="wrapper">
         <!-- MENU TOP -->
-        <div class="menu-top menu">
+        <div class="menu-top menu flex align-center justify-between">
           <a href="#" class="logo">Atitude Radical</a>
           <button class="open-menu" onclick="menuOpen()">
             <svg
@@ -51,49 +52,48 @@
               />
             </svg>
           </button>
+
+          <button class="close-menu hidden" onclick="menuClose()">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25 7L7 25"
+                stroke="#0D0D0D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M25 25L7 7"
+                stroke="#0D0D0D"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
         <!-- ... -->
 
         <div class="menu-links">
-          <div>
-            <button class="close-menu" onclick="menuClose()">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M25 7L7 25"
-                  stroke="#0D0D0D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M25 25L7 7"
-                  stroke="#0D0D0D"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </button>
-          </div>
-          <ul class="">
-            <li><a href="#">Página Principal</a></li>
-            <li><a href="#">O que é o Projeto?</a></li>
-            <li><a href="#">Nossa História</a></li>
-            <li><a href="#">Agenda</a></li>
-            <li><a href="#">Regras do Projeto</a></li>
-            <li><a href="#">Vídeos</a></li>
-            <li><a href="#">Arquivos</a></li>
-            <li><a href="#">Localização</a></li>
+          <ul class="flex f-column align-center gap-2 mt-4">
+            <li><a href="#" onclick="menuClose()">Página Principal</a></li>
+            <li><a href="#" onclick="menuClose()">O que é o Projeto?</a></li>
+            <li><a href="#" onclick="menuClose()">Nossa História</a></li>
+            <li><a href="#" onclick="menuClose()">Agenda</a></li>
+            <li><a href="#" onclick="menuClose()">Regras do Projeto</a></li>
+            <li><a href="#" onclick="menuClose()">Vídeos</a></li>
+            <li><a href="#" onclick="menuClose()">Arquivos</a></li>
+            <li><a href="#" onclick="menuClose()">Localização</a></li>
           </ul>
 
           <!-- socials -->
-          <ul class="socials">
+          <ul class="socials flex justify-center gap-2 mt-4">
             <li>
               <a href="#"
                 ><svg
