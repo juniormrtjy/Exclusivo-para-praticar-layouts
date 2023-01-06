@@ -1,0 +1,25 @@
+/* FLEX */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 1;
+}
+.gap-2 {
+  gap: 2;
+}
+.gap-3 {
+  gap: 3;
+}
+.gap-4 {
+  gap: 4;
+}
+.gap-5 {
+  gap: 5;
+}
+
+.f-column {
+  flex-direction: column;
+}
