@@ -9,14 +9,20 @@
   --poppins: 'Poppins', sans-serif;
   --merienda: 'Merienda One', sans-serif;
   --font: 'Inter Tight', sans-serif;
-  --nav-height: 6.2rem;
+  --nav-height: 7.8rem;
 
   /* colors */
   --main: #0d0d0d;
   --main-light: #fff;
   --alt-dark: #403e4b;
   --alt-light: #d9d4cc;
-  --indigo-700: #4338ca;
+  --rose-700: #be123c;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -25,6 +31,8 @@ body {
   background: var(--main-light);
 
   text-align: center;
+
+  overflow: overlay;
 }
 
 .wrapper {
@@ -59,28 +67,56 @@ button {
   padding-block: 1.6rem;
 }
 
-#nav .logo {
-  font-size: 2.2rem;
-  color: var(--main);
-}
-
-#nav .logo span {
-  font-weight: bold;
-  color: var(--indigo-700);
-  transition: color 0.2s;
-}
-
-#nav i {
-  font-size: 2.6rem;
-}
-
 #nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+#nav .logo {
+  font-size: 2.6rem;
+  color: var(--main);
+}
+
+#nav .logo span {
+  font-weight: bold;
+  color: var(--rose-700);
+  transition: color 0.2s;
+}
+
+#nav i {
+  font-size: 3.2rem;
+}
+
+#nav .open-menu i {
+  color: var(--rose-700);
+  border: 2px solid var(--rose-700);
+  border-radius: 0.3rem;
+}
+
+#nav.scroll {
+  width: 100%;
+  background: var(--rose-700);
+}
+
+#nav.scroll .open-menu i,
+#nav.scroll .logo,
+#nav.scroll .logo span {
+  color: var(--alt-light);
+}
+
+#nav.scroll .open-menu i {
+  border-color: var(--alt-light);
+}
 /* MENU */
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  display: none;
+}
+
 body.menu-expanded #nav {
   position: relative;
 }
@@ -90,6 +126,12 @@ body.menu-expanded .open-menu {
   position: relative;
   z-index: 11;
   color: var(--alt-light);
+}
+
+body.menu-expanded #nav .open-menu i {
+  color: var(--alt-light);
+  border: 2px solid var(--alt-light);
+  border-radius: 0.3rem;
 }
 
 .menu {
@@ -157,4 +199,9 @@ body.menu-expanded #nav .logo span {
 .socials a i {
   color: var(--alt-light);
   font-size: 3.2rem !important;
+}
+
+/* ========== HEADER ========== */
+#header {
+  margin-top: var(--nav-height);
 }
