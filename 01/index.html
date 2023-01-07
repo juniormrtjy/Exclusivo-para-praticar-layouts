@@ -1,24 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <!-- ... -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Layout 01</title>
+    <title>for fun</title>
   </head>
-  <body>
-    <main>
-      <header>
-        <h1 class="">Talvez me custe tudo</h1>
-      </header>
-    </main>
+  <body class="">
+    <nav id="nav">
+      <div class="wrapper">
+        <a href="#" class="logo">Doctor<span>Care</span></a>
+
+        <!-- MENU -->
+        <div class="menu">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+          </ul>
+
+          <!-- BUTTON -->
+          <a href="#" class="button">Agende sua consulta</a>
+
+          <!-- SOCIALS -->
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- BTN OPEN AND CLOSE MENU -->
+        <button class="open-menu" onclick="toggleMenu()">
+          <i class="bx bx-menu"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- SCRIPT -->
+    <script src="main.js"></script>
   </body>
 </html>
