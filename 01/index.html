@@ -34,9 +34,9 @@
         <!-- MENU -->
         <div class="menu">
           <ul>
-            <li><a href="#" onclick="toggleMenu()">Início</a></li>
-            <li><a href="#" onclick="toggleMenu()">Sobre</a></li>
-            <li><a href="#" onclick="toggleMenu()">Serviços</a></li>
+            <li><a href="#home" onclick="toggleMenu()">Início</a></li>
+            <li><a href="#services" onclick="toggleMenu()">Serviços</a></li>
+            <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
           </ul>
 
           <!-- BUTTON -->
@@ -72,18 +72,26 @@
     </nav>
 
     <!-- HEADER -->
-    <header id="header">
+    <section id="home">
       <div class="wrapper">
-        <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-        <h1>Assistência médica simplificada para todos</h1>
-        <p>
-          Os médicos da DoctorCare vão além dos sintomas para tratar a causa
-          raiz de sua doença e proporcionar uma cura a longo prazo.
-        </p>
-        <button><i class="bx bxl-whatsapp"></i> Agende sua consulta</button>
+        <header>
+          <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+          <h1>Assistência médica simplificada para todos</h1>
+        </header>
 
-        <img src="./assets/Foto.png" alt="" />
+        <!-- CONTEÚDO -->
+        <div class="content">
+          <p>
+            Os médicos da DoctorCare vão além dos sintomas para tratar a causa
+            raiz de sua doença e proporcionar uma cura a longo prazo.
+          </p>
 
+          <button><i class="bx bxl-whatsapp"></i> Agende sua consulta</button>
+
+          <img src="./assets/Foto.png" alt="" />
+        </div>
+
+        <!-- STATS -->
         <div class="stats">
           <div class="stat">
             <h3>+3.500</h3>
@@ -101,8 +109,131 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>serviços</h4>
+          <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content">
+          <!-- CARDS -->
+          <div class="cards">
+            <!-- CARD -->
+            <div class="card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <h3>Title</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <!-- CARD -->
+            <div class="card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <h3>Title</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+
+            <!-- CARD -->
+            <div class="card">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+                <path
+                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                  stroke="#00856F"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <h3>Title</h3>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrapper">
+        <header>
+          <h4>Sobre nós</h4>
+          <h2>Entenda quem somos e por que existimos</h2>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, ipsa asperiores amet aut molestiae explicabo officiis,
+            est totam et consectetur suscipit fugit atque optio eum minus, saepe
+            quos eveniet rerum. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Deleniti eum ad ipsam, beatae eveniet veniam
+            numquam. Deserunt inventore, illum natus temporibus sed corrupti
+            dolores laborum aliquam, maxime excepturi magni ut.
+          </p>
+          <img
+            src="./assets/doutor-feliz-segurando-prancheta-com-pacientes.png"
+            alt="Doutor feliz segurando prancheta com pacientes."
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- SCRIPT -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
 </html>
